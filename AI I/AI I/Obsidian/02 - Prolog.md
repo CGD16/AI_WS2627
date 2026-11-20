@@ -1,0 +1,13 @@
+- facts (Dinge, die einfach wahr sind)
+	- vater(hans, peter). // Hans ist der Vater von Peter
+	- vater(peter, lisa). // Peter ist der Vater von Lisa
+- rules (Dinge, die wahr sind, wenn anderes wahr ist)
+	- opa(X, Z) :- vater (X, Y), vater(Y, Z)
+		- // X ist der Opa von Z, wenn X Vater von Y und Y der Vater von Z ist
+	-  Das ":-" heißt "wenn"
+	- Das Komma "," heißt "und"
+- Query (Ist das wahr?)
+	- ?- vater(hans, peter) -> true
+	- man kann auch mit Variablen
+		- ?- vater (hans, X) // wer ist der Vater von Hans
+		- X = peter.
