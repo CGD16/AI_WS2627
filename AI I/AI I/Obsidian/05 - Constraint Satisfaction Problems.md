@@ -14,8 +14,20 @@
 	    - 1 (unary): a>2 
 	    - 2 (binary): a=b
 		- > 2 (higher-order): c+b>a
+		- $max(\vert{}V\vert{})$
         
 - **Satisfiability (Def. 7.1.4):** A CSP is called **satisfiable** iff there is a total variable assignment that satisfies _all_ constraints.
+
+
+
+### 7.3 CSP: Towards a Formal Definition
+
+
+### 7.4 Constraint Networks: Formalizing Binary CSPs
+
+
+### 7.5 CSP as Search
+
 
 
 
@@ -24,6 +36,11 @@
 
 
 ### Constraint Propagation/Inference
+
+
+
+
+
 
 ### Forward Checking
 
