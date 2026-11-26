@@ -2,7 +2,7 @@ can be seen Chapter 7 and 8 in RN21!!!
 ### 7.1 Constraint Satisfaction Problems: Motivation
 - **CSP (Def. 7.1.2):** A triple $\langle V, D, C \rangle$ consisting of:
     1. a finite set of **variables** $V$, 
-	    - gives val
+	    - gives values
 	    - ???? wie aus der Textaufgabe lese ich heraus, was Variablen und Domänen sind?? 
     2. a $V$-indexed family of **domains** $(D_v)_{v \in V}$, and
     3. **constraints** $C_{\{v_1, \dots, v_k\}} \subseteq D_{v_1} \times \dots \times D_{v_k}$ for subsets of variables.
@@ -34,7 +34,7 @@ Formalizing binary CSPs
 	- Given a constraint network $\gamma := <V,D,C>$ we call the undirected graph $<V, {(u,v) \in V^{2} | C_{uv} = D_{u} \times D_{v} }>$ the constraint graph of $\gamma$
 	- expressing $u = v$ is equivalent to $C_{uv} = {(a,b) | a = b}$
 	- express unary constraints $C_{u}$ by restricting the domain of $v: D_{v} \coloneqq C_{v}$ 
-	- Assignment, Consitency and Solutions
+	- Assignment, Consistency and Solutions
 		- **Variable Assignment:** A partial function mapping a subset of variables (its domain) to values from each variable's respective domain 
 		- **Satisfying vs. Violating:** A constraint on two variables is satisfied by an assignment if both variables are assigned and their assigned pair lies in the constraint relation (otherwise violated) 
 		- **Consistent Assignment:** Satisfies all relevant constraints over the variables in its domain; the empty assignment is trivially consistent.
